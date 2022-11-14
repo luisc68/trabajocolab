@@ -21,7 +21,6 @@ with open('test.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         print(row)
-
+#convertir csv a pdf
 from csv2pdf import convert
 convert("test.csv", "2022-11-15.pdf")
-
